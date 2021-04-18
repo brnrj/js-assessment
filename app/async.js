@@ -11,10 +11,9 @@ exports.asyncAnswers = {
   },
 
   manipulateRemoteData: function (url) {
-    return fetch(url)
-      .then(async(response) => {
-        const data = await response.json()
-        return data.people.map((element) => element.name).sort()
-      })
+    return fetch(url).then(async (response) => {
+      const data = await response.json();
+      return data.people.map((element) => element.name).sort();
+    });
   },
 };

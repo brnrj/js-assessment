@@ -10,8 +10,8 @@ exports.functionsAnswers = {
   },
 
   functionFunction: function(str) {
-    return function(e) {
-      return str + ', ' + e
+    return function(value) {
+      return str + ', ' + value
     }
   },
 
@@ -30,8 +30,8 @@ exports.functionsAnswers = {
   },
 
   partial: function(fn, str1, str2) {
-    return function(x){
-      return fn(str1, str2, x)
+    return function(value){
+      return fn(str1, str2, value)
     }
   },
 
